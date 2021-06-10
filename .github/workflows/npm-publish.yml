@@ -32,7 +32,5 @@ jobs:
       - name: Run Project
         env:
           COOKIE: ${{ secrets.COOKIE }}
-          PUSH_KEY: ${{ secrets.PUSH_KEY }}
           SERVER_SECRET: ${{ secrets.SERVER_SECRET }}
-          UPLOAD_BESULT_DIR: true
         run: npm ci && node index.js "${COOKIE}" ${SERVER_SECRET}
