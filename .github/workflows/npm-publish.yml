@@ -32,5 +32,6 @@ jobs:
       - name: Run Project
         env:
           COOKIE: ${{ secrets.COOKIE }}
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
           SERVER_SECRET: ${{ secrets.SERVER_SECRET }}
         run: npm ci && node index.js "${COOKIE}" ${SERVER_SECRET}
