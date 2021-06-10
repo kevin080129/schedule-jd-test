@@ -17,7 +17,7 @@
 
 const [cookie, serverSecret] = process.argv.slice(2);
 
-var Key = pt_key=AAJgwXGiADCo2gLdGJR9yWa-TWzj4tZeDhyPlpzsVYbX0pYfJtqUCgXLI438CzcHBJfOzXgHXnU; pt_pin=itxuvv; //单引号内自行填写您抓取的Cookie
+var Key = cookie; //单引号内自行填写您抓取的Cookie
 
 var DualKey = ''; //如需双账号签到,此处单引号内填写抓取的"账号2"Cookie, 否则请勿填写
 
