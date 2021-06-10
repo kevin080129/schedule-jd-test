@@ -17,7 +17,7 @@
 
 const [cookie, serverSecret] = process.argv.slice(2);
 
-var Key = ''; //单引号内自行填写您抓取的Cookie
+var Key = cookie; //单引号内自行填写您抓取的Cookie
 
 var DualKey = ''; //如需双账号签到,此处单引号内填写抓取的"账号2"Cookie, 否则请勿填写
 
